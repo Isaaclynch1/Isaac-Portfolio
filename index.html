@@ -3,169 +3,235 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Isaac Lynch</title>
+  <title>Isaac Lynch | Engineering Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Caveat:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
+  <!-- NAV -->
   <nav class="nav">
     <div class="wrap">
-      <a class="brand" href="index.html">Isaac Lynch</a>
+      <a class="brand" href="index.html">Isaac<span>.</span></a>
       <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">Menu</button>
       <ul id="menu">
         <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
+        <li><a href="#beyond">Beyond the Shop</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
     <div class="wrap">
       <div>
-        <h1>Hi, I'm Isaac.</h1>
-        <p>I go to Pacific Grove High School, and this is where I keep the stuff I've designed and made in engineering class. Most of it starts as a sketch, turns into a model in Fusion 360, and ends up as a real part off the CNC mill.</p>
-        <div class="links">
-          <a href="#projects">My projects</a>
-          <a href="#resume">Resume</a>
-        </div>
+        <span class="eyebrow">Engineering &amp; Manufacturing Portfolio</span>
+        <h1>Hi, I'm <span>Isaac Lynch.</span></h1>
+        <p class="lead">I'm a student at Pacific Grove High School who loves designing parts in Fusion 360 and turning them into real objects on the CNC machine. This site shows my projects, my machining process, and what I've learned along the way.</p>
+        <a class="btn" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#resume">View resume</a>
       </div>
-      <figure class="polaroid">
-        <!-- swap this for a photo of you at the CNC machine when you have one -->
-        <img src="images/podium.JPG" alt="Isaac on the podium at a cross country meet">
-        <figcaption class="note">me, finally on the podium</figcaption>
-      </figure>
+      <div class="hero-img">
+        <!-- TODO: replace with a photo of you working at the CNC machine -->
+        <img src="images/podium.JPG" alt="Isaac Lynch">
+      </div>
     </div>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about">
+  <!-- 0. ABOUT -->
+  <section id="about" class="alt">
     <div class="wrap about-grid">
       <div>
-        <h2 class="sec-title">About me</h2>
-        <p>I live in Pacific Grove, California. I like figuring out how things work and then trying to make them myself, which is probably why I ended up in engineering class.</p>
-        <p>When I'm not in the shop, I'm usually running. I do cross country and track. I'm also captain and co-software lead of BreakerBots, our FRC robotics team, and I play piano.</p>
-        <p><span class="todo">Add a sentence or two about what kind of engineering you're into and what you want to do after high school.</span></p>
+        <span class="eyebrow">00 — About me</span>
+        <h2>Builder, runner, musician.</h2>
+        <p>I'm a student at Pacific Grove High School in Monterey, California. I'm outgoing, friendly, and kind, and I like problems where I get to figure out how something works and then make it better.</p>
+        <p>In engineering class I've learned to take an idea from a sketch, to a 3D model in Fusion 360, to a finished part on the CNC mill. Outside the shop I run cross country and track, play piano and violin, and build robots.</p>
+        <p><span class="todo">Add 1–2 sentences: what kind of engineering interests you most, and what you want to study or do after high school.</span></p>
       </div>
-      <dl class="facts">
-        <dt>School</dt>
-        <dd>Pacific Grove High School, Class of 2028</dd>
-        <dt>Software</dt>
-        <dd>Fusion 360, AutoCAD, VS Code</dd>
-        <dt>In the shop</dt>
-        <dd>Tormach 1100MX mill, Tormach 24R router, Markforged and Bambu Lab 3D printers</dd>
-        <dt>Outside class</dt>
-        <dd>FRC robotics (BreakerBots captain), track, cross country, piano</dd>
-      </dl>
+      <div>
+        <ul class="facts">
+          <li><b>Name</b><span>Isaac Lynch</span></li>
+          <li><b>School</b><span>Pacific Grove High School, <span class="todo">Class of 20XX</span></span></li>
+          <li><b>Location</b><span>Monterey, California</span></li>
+          <li><b>Interests</b><span>CAD &amp; CNC machining, robotics, coding, music, running</span></li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Fusion 360</span>
+          <span class="chip">CNC Milling</span>
+          <span class="chip">CAM / Toolpaths</span>
+          <span class="chip">Robotics</span>
+          <span class="chip">HTML &amp; CSS</span>
+          <span class="chip">Piano &amp; Violin</span>
+          <span class="chip">Cross Country</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- RESUME -->
-  <section id="resume" style="padding-top:0">
+  <!-- 1. RESUME -->
+  <section id="resume">
     <div class="wrap">
-      <h2 class="sec-title">Resume</h2>
+      <span class="eyebrow">01 — Resume</span>
+      <h2>Resume</h2>
+      <p class="lead">A quick look at my education, skills, and experience.</p>
+      <!-- TODO: export your resume as PDF, save it as resume.pdf in this folder -->
+      <a class="btn" href="resume.pdf" target="_blank">Download PDF resume</a>
 
-      <div class="resume-sheet">
-        <div class="top">
-          <h3>Isaac Lynch</h3>
-          <span>Pacific Grove, CA &nbsp;|&nbsp; <a href="https://github.com/isaaclynchrobotics" target="_blank">github.com/isaaclynchrobotics</a></span>
+      <div class="resume">
+        <div class="card">
+          <h3>Education</h3>
+          <div class="entry">
+            <div class="when"><span class="todo">20XX – Present</span></div>
+            <h4>Pacific Grove High School</h4>
+            <p>Engineering / Manufacturing pathway. <span class="todo">Add GPA or honors if you want.</span></p>
+          </div>
+          <div class="entry">
+            <div class="when"><span class="todo">Years</span></div>
+            <h4><span class="todo">Middle school name</span></h4>
+            <p>Cross country league champion (8th grade). Track &amp; field medalist.</p>
+          </div>
         </div>
 
-        <h4>Education</h4>
-        <div class="row"><b>Pacific Grove High School, Pacific Grove, CA</b><span class="when">Expected graduation: May 2028</span></div>
-        <ul>
-          <li>GPA: 4.0 (4.42 weighted)</li>
-          <li>Relevant coursework: Engineering 1, Engineering 2 (dual enrollment), Engineering 3, AP Calculus AB, AP Statistics, AP Computer Science, Honors Chemistry, Physics</li>
-        </ul>
+        <div class="card">
+          <h3>Technical Skills</h3>
+          <div class="entry">
+            <h4>Design &amp; CAD</h4>
+            <p>Autodesk Fusion 360 — sketches, 3D modeling, assemblies, technical drawings</p>
+          </div>
+          <div class="entry">
+            <h4>Manufacturing</h4>
+            <p>CAM toolpath setup, CNC milling, work holding, tool selection, measuring with calipers</p>
+          </div>
+          <div class="entry">
+            <h4>Programming</h4>
+            <p>HTML &amp; CSS (built this website), robotics programming</p>
+          </div>
+        </div>
 
-        <h4>Technical Skills</h4>
-        <ul>
-          <li><b>Languages:</b> Java, Python, HTML, JavaScript</li>
-          <li><b>Developer tools:</b> Linux (Ubuntu), Windows, macOS, Visual Studio Code, GitHub, Git, Maven</li>
-          <li><b>CAD/CAM software:</b> Fusion 360, AutoCAD</li>
-          <li><b>Hardware:</b> FDM 3D printing with Markforged and Bambu Lab printers, Tormach 1100MX mill and 24R router</li>
-        </ul>
+        <div class="card">
+          <h3>Projects</h3>
+          <div class="entry">
+            <div class="when"><span class="todo">2025 – 2026</span></div>
+            <h4><span class="todo">Last year's project name</span></h4>
+            <p>Designed in Fusion 360 and machined on the CNC mill.</p>
+          </div>
+          <div class="entry">
+            <div class="when">2026</div>
+            <h4>Titan 2M</h4>
+            <p><span class="todo">One-line summary.</span></p>
+          </div>
+          <div class="entry">
+            <div class="when">2026</div>
+            <h4><span class="todo">Semester 1 project name</span></h4>
+            <p><span class="todo">One-line summary.</span></p>
+          </div>
+        </div>
 
-        <h4>Activities</h4>
-        <div class="row"><b>FIRST Robotics Competition (FRC), BreakerBots</b><span class="when">2024–Present</span></div>
-        <p><i>Captain &amp; Co-Software Lead</i></p>
-        <ul>
-          <li>Programmed a competition robot in Java using WPILib and CTRE libraries; co-led a robot that advanced to the 2026 NorCal State Championship.</li>
-          <li>Served as Drive Coach (2026–Present), directing match strategy, coordinating with alliance teams, and communicating match-play decisions.</li>
-          <li>Developed and deployed a YOLOv8 computer vision model for real-time object detection on a competition robot.</li>
-          <li>Industrial Design Award (2026); Innovation in Control Award (2025)</li>
-        </ul>
-        <div class="row"><b>Regeneron International Science and Engineering Fair (ISEF)</b></div>
-        <ul>
-          <li>Developed an algorithm using satellite imagery topography map layers along with city data to track drains that pose the highest risk of clogging.</li>
-        </ul>
-        <div class="row"><b>Varsity Track &amp; Field</b><span class="when">2024–Present</span></div>
-        <div class="row"><b>Cross Country</b><span class="when">2024–Present</span></div>
-        <div class="row"><b>Big Sur Marathon Volunteer</b><span class="when">2023–Present</span></div>
-        <div class="row"><b>Music Teachers' Association of California</b><span class="when">2025</span></div>
-        <p>Piano, Level 10 California State Honors</p>
+        <div class="card">
+          <h3>Activities &amp; Awards</h3>
+          <div class="entry">
+            <h4>Cross Country &amp; Track and Field</h4>
+            <p>1st place at the MTJAL championship meet in 8th grade; 1st place 4x100 relay in 7th grade.</p>
+          </div>
+          <div class="entry">
+            <h4>Robotics</h4>
+            <p><span class="todo">Team name, your role, competitions.</span></p>
+          </div>
+          <div class="entry">
+            <h4>Music</h4>
+            <p>Piano and violin.</p>
+          </div>
+        </div>
+
+        <div class="card wide">
+          <h3>Internships &amp; Volunteer Work</h3>
+          <div class="entry">
+            <p><span class="todo">Optional — add any internships, volunteer work, or STEM camps here. Delete this card if you don't have any yet.</span></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" style="background:var(--white); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);">
+  <!-- 2–4. PROJECTS -->
+  <section id="projects" class="alt">
     <div class="wrap">
-      <h2 class="sec-title">Projects</h2>
-      <p class="lead">For each one I go through the design, the Fusion model, how I machined it, and what I took away from it.</p>
+      <span class="eyebrow">02 — Projects</span>
+      <h2>Engineering Projects</h2>
+      <p class="lead">Each project covers the design, the Fusion 360 model, the machining process, and what I learned.</p>
 
-      <div class="projects">
-        <a class="project-row" href="project-last-year.html">
-          <div class="pic"><!-- <img src="images/projects/last-year-cover.jpg" alt=""> -->photo coming</div>
-          <div>
-            <span class="kicker">Last year</span>
+      <div class="grid-3">
+        <a class="pcard" href="project-last-year.html">
+          <div class="thumb"><!-- TODO: <img src="images/projects/last-year-cover.jpg" alt=""> -->Add cover photo</div>
+          <div class="body">
+            <span class="tag">Last year</span>
             <h3><span class="todo">Project name</span></h3>
             <p>Designed in Fusion 360 and cut on the CNC mill.</p>
-            <span class="more">Read about it &rarr;</span>
+            <span class="status ready">Ready for review</span>
           </div>
         </a>
-        <a class="project-row" href="titan-2m.html">
-          <div class="pic">photo coming</div>
-          <div>
-            <span class="kicker">This semester</span>
+        <a class="pcard" href="titan-2m.html">
+          <div class="thumb">Add cover photo</div>
+          <div class="body">
+            <span class="tag">Semester 1</span>
             <h3>Titan 2M</h3>
-            <p>Write-up coming soon.</p>
-            <span class="more">Read about it &rarr;</span>
+            <p>Machining project from this semester.</p>
+            <span class="status">Coming for final draft</span>
           </div>
         </a>
-        <a class="project-row" href="semester-1-project.html">
-          <div class="pic">photo coming</div>
-          <div>
-            <span class="kicker">This semester</span>
+        <a class="pcard" href="semester-1-project.html">
+          <div class="thumb">Add cover photo</div>
+          <div class="body">
+            <span class="tag">Semester 1</span>
             <h3><span class="todo">Project name</span></h3>
-            <p>Write-up coming soon.</p>
-            <span class="more">Read about it &rarr;</span>
+            <p>Additional project from this semester.</p>
+            <span class="status">Coming for final draft</span>
           </div>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- BLOG -->
-  <section id="blog">
+  <!-- BEYOND THE SHOP (existing blog posts) -->
+  <section id="beyond">
     <div class="wrap">
-      <h2 class="sec-title">Blog</h2>
+      <span class="eyebrow">03 — Beyond the shop</span>
+      <h2>Blog</h2>
       <p class="lead">My accomplishments, projects, and more!</p>
-      <ul class="posts">
-        <li><a href="blog-1.html"><img src="images/piano.jpeg" alt=""><div><span class="yr">2015</span><h3>Learn about my piano journey and success</h3></div></a></li>
-        <li><a href="blog-2.html"><img src="images/crosscountry.jpg" alt=""><div><span class="yr">2022</span><h3>My Journey in runnnig cross country and track/field</h3></div></a></li>
-        <li><a href="blog-3.html"><img src="images/logical.jpg" alt=""><div><span class="yr">2024</span><h3>Learning about Logical Fallacies</h3></div></a></li>
-      </ul>
+
+      <div class="grid-3">
+        <a class="pcard bcard" href="blog-1.html">
+          <div class="thumb"><img src="images/piano.jpeg" alt="Piano"></div>
+          <div class="body">
+            <span class="tag">2015</span>
+            <h3>Learn about my piano journey and success</h3>
+          </div>
+        </a>
+        <a class="pcard bcard" href="blog-2.html">
+          <div class="thumb"><img src="images/crosscountry.jpg" alt="Cross country"></div>
+          <div class="body">
+            <span class="tag">2022</span>
+            <h3>My Journey in runnnig cross country and track/field</h3>
+          </div>
+        </a>
+        <a class="pcard bcard" href="blog-3.html">
+          <div class="thumb"><img src="images/logical.jpg" alt="Logical fallacies"></div>
+          <div class="body">
+            <span class="tag">2024</span>
+            <h3>Learning about Logical Fallacies</h3>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="wrap">
-      <span>Isaac Lynch, 2026</span>
-      <span><a href="#about">About</a><a href="#resume">Resume</a><a href="#projects">Projects</a><a href="#blog">Blog</a></span>
+      <span>&copy; 2026 Isaac Lynch · Pacific Grove High School</span>
+      <span><a href="#about">About</a><a href="#resume">Resume</a><a href="#projects">Projects</a><a href="#beyond">Blog</a></span>
     </div>
   </footer>
 

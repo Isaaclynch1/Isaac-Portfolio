@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Semester 1 Project | Isaac Lynch</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Caveat:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
   <nav class="nav">
     <div class="wrap">
-      <a class="brand" href="index.html">Isaac Lynch</a>
+      <a class="brand" href="index.html">Isaac<span>.</span></a>
       <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">Menu</button>
       <ul id="menu">
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#resume">Resume</a></li>
         <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#beyond">Beyond the Shop</a></li>
       </ul>
     </div>
   </nav>
@@ -26,13 +26,13 @@
   <header class="p-hero">
     <div class="wrap">
       <a class="back" href="index.html#projects">&larr; All projects</a><br>
-      <span class="eyebrow">This semester</span>
+      <span class="eyebrow">Project · Semester 1</span>
       <h1><span class="todo">Project Name</span></h1>
       <p class="lead"><span class="todo">One sentence: what the part is and what it's for.</span></p>
-      <div class="callout" style="margin-top:20px"><p style="margin:0">Still working on this one. Full write-up coming for the final draft.</p></div>
+      <div class="callout" style="margin-top:20px"><p style="margin:0"><strong>Layout preview:</strong> this project page will be completed for the final draft.</p></div>
       <div class="meta">
         <span class="chip">Fusion 360</span>
-        <span class="chip"><span class="todo">Tormach 1100MX</span></span>
+        <span class="chip"><span class="todo">CNC mill model</span></span>
         <span class="chip"><span class="todo">Material (e.g. 6061 aluminum)</span></span>
       </div>
       <ul class="toc">
@@ -51,13 +51,13 @@
     <section id="description" class="p-section">
       <h2><small>01</small>Description</h2>
       <p><span class="todo">What is this project? What was the goal or design challenge? What constraints did you have (size, material, time, tolerances)? Who or what is it for?</span></p>
-      <p><span class="todo">Describe the key features of the part: pockets, holes, contours, text engraving, etc.</span></p>
+      <p><span class="todo">Describe the key features of the part — pockets, holes, contours, text engraving, etc.</span></p>
     </section>
 
     <!-- PHOTOS -->
     <section id="photos" class="p-section">
       <h2><small>02</small>Photos</h2>
-      
+      <p>The finished part and the build process.</p>
       <div class="gallery">
         <!-- TODO: put photos in images/projects/ and replace each placeholder with:
              <figure><img src="images/projects/FILENAME.jpg" alt="..."><figcaption>Caption</figcaption></figure> -->
@@ -69,7 +69,7 @@
 
     <!-- 3D MODEL -->
     <section id="model" class="p-section">
-      <h2><small>03</small>The Fusion 360 model</h2>
+      <h2><small>03</small>3D Model in Fusion 360</h2>
       <div class="cad">
         <!-- TODO: screenshot your Fusion 360 model and replace with <img src="images/projects/semester-1-fusion.png" alt="Fusion 360 model"> -->
         <div class="ph wide">Fusion 360 screenshot of the 3D model</div>
@@ -83,9 +83,9 @@
     <!-- MACHINING -->
     <section id="machining" class="p-section">
       <h2><small>04</small>Machining Process</h2>
-      <p><strong>Machine:</strong> <span class="todo">Tormach 1100MX mill or 24R router</span><br><strong>Work holding:</strong> <span class="todo">e.g. vise, soft jaws, fixture plate</span><br><strong>Material:</strong> <span class="todo">material &amp; stock size</span></p>
+      <p><strong>Machine:</strong> <span class="todo">e.g. Haas / Tormach / other CNC mill model</span> &nbsp;·&nbsp; <strong>Work holding:</strong> <span class="todo">e.g. vise, soft jaws, fixture plate</span> &nbsp;·&nbsp; <strong>Material:</strong> <span class="todo">material &amp; stock size</span></p>
 
-      <h3>Tools I used and why</h3>
+      <h3>Tools &amp; what each was used for</h3>
       <div class="table-scroll">
         <table class="tools">
           <thead><tr><th>Tool #</th><th>Bit</th><th>Operation</th><th>Why this bit</th></tr></thead>
@@ -117,7 +117,7 @@
         <p><span class="todo">What skills did you build? (CAD, CAM, machine setup, measuring, problem solving.) What are you most proud of about the finished part? How will you use what you learned on the next project?</span></p>
       </div>
       <div class="pager">
-        <a class="btn" href="index.html#projects">&larr; All projects</a>
+        <a class="btn ghost" href="index.html#projects">&larr; All projects</a>
         <a class="btn" href="project-last-year.html">Back to first project &rarr;</a>
       </div>
     </section>
@@ -126,8 +126,8 @@
 
   <footer>
     <div class="wrap">
-      <span>Isaac Lynch, 2026</span>
-      <span><a href="index.html#about">About</a><a href="index.html#resume">Resume</a><a href="index.html#projects">Projects</a><a href="index.html#blog">Blog</a></span>
+      <span>&copy; 2026 Isaac Lynch · Pacific Grove High School</span>
+      <span><a href="index.html#about">About</a><a href="index.html#resume">Resume</a><a href="index.html#projects">Projects</a><a href="index.html#beyond">Blog</a></span>
     </div>
   </footer>
 
