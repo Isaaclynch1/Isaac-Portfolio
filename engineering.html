@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering | Isaac Lynch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Caveat:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Isaac Lynch</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">Menu</button>
+      <ul id="menu">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="engineering.html">Engineering</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="p-hero" style="background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;">
+    <div class="wrap">
+      <h1>Engineering</h1>
+      <p class="lead">My resume and the projects I've designed in Fusion 360 and made on the Tormach mill and router.</p>
+      <p><b>Software:</b> Fusion 360, AutoCAD, VS Code<br><b>In the shop:</b> Tormach 1100MX mill, Tormach 24R router, Markforged and Bambu Lab 3D printers</p>
+      <ul class="toc">
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <div class="wrap">
+      <h2 class="sec-title">Resume</h2>
+
+      <div class="resume-sheet">
+        <div class="top">
+          <h3>Isaac Lynch</h3>
+          <span>Pacific Grove, CA &nbsp;|&nbsp; <a href="https://github.com/isaaclynchrobotics" target="_blank">github.com/isaaclynchrobotics</a></span>
+        </div>
+
+        <h4>Education</h4>
+        <div class="row"><b>Pacific Grove High School, Pacific Grove, CA</b><span class="when">Expected graduation: May 2028</span></div>
+        <ul>
+          <li>GPA: 4.0 (4.42 weighted)</li>
+          <li>Relevant coursework: Engineering 1, Engineering 2 (dual enrollment), Engineering 3, AP Calculus AB, AP Statistics, AP Computer Science, Honors Chemistry, Physics</li>
+        </ul>
+
+        <h4>Technical Skills</h4>
+        <ul>
+          <li><b>Languages:</b> Java, Python, HTML, JavaScript</li>
+          <li><b>Developer tools:</b> Linux (Ubuntu), Windows, macOS, Visual Studio Code, GitHub, Git, Maven</li>
+          <li><b>CAD/CAM software:</b> Fusion 360, AutoCAD</li>
+          <li><b>Hardware:</b> FDM 3D printing with Markforged and Bambu Lab printers, Tormach 1100MX mill and 24R router</li>
+        </ul>
+
+        <h4>Activities</h4>
+        <div class="row"><b>FIRST Robotics Competition (FRC), BreakerBots</b><span class="when">2024–Present</span></div>
+        <p><i>Captain &amp; Co-Software Lead</i></p>
+        <ul>
+          <li>Programmed a competition robot in Java using WPILib and CTRE libraries; co-led a robot that advanced to the 2026 NorCal State Championship.</li>
+          <li>Served as Drive Coach (2026–Present), directing match strategy, coordinating with alliance teams, and communicating match-play decisions.</li>
+          <li>Developed and deployed a YOLOv8 computer vision model for real-time object detection on a competition robot.</li>
+          <li>Industrial Design Award (2026); Innovation in Control Award (2025)</li>
+        </ul>
+        <div class="row"><b>Regeneron International Science and Engineering Fair (ISEF)</b></div>
+        <ul>
+          <li>Developed an algorithm using satellite imagery topography map layers along with city data to track drains that pose the highest risk of clogging.</li>
+        </ul>
+        <div class="row"><b>Varsity Track &amp; Field</b><span class="when">2024–Present</span></div>
+        <div class="row"><b>Cross Country</b><span class="when">2024–Present</span></div>
+        <div class="row"><b>Big Sur Marathon Volunteer</b><span class="when">2023–Present</span></div>
+        <div class="row"><b>Music Teachers' Association of California</b><span class="when">2025</span></div>
+        <p>Piano, Level 10 California State Honors</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" style="background:var(--white); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);">
+    <div class="wrap">
+      <h2 class="sec-title">Projects</h2>
+      <p class="lead">For each one I go through the design, the Fusion model, how I machined it, and what I took away from it.</p>
+
+      <div class="projects">
+        <a class="project-row" href="project-last-year.html">
+          <div class="pic"><!-- <img src="images/projects/last-year-cover.jpg" alt=""> -->photo coming</div>
+          <div>
+            <span class="kicker">Last year</span>
+            <h3><span class="todo">Project name</span></h3>
+            <p>Designed in Fusion 360 and cut on the CNC mill.</p>
+            <span class="more">Read about it &rarr;</span>
+          </div>
+        </a>
+        <a class="project-row" href="titan-2m.html">
+          <div class="pic">photo coming</div>
+          <div>
+            <span class="kicker">This semester</span>
+            <h3>Titan 2M</h3>
+            <p>Write-up coming soon.</p>
+            <span class="more">Read about it &rarr;</span>
+          </div>
+        </a>
+        <a class="project-row" href="semester-1-project.html">
+          <div class="pic">photo coming</div>
+          <div>
+            <span class="kicker">This semester</span>
+            <h3><span class="todo">Project name</span></h3>
+            <p>Write-up coming soon.</p>
+            <span class="more">Read about it &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>Isaac Lynch, 2026</span>
+      <span><a href="index.html#about">About</a><a href="engineering.html">Engineering</a><a href="index.html#blog">Blog</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
