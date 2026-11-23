@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Last Year's Project | Isaac Lynch</title>
+  <title>Epoxy Ocean Art | Isaac Lynch</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Caveat:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
@@ -17,7 +17,7 @@
       <ul id="menu">
         <li><a href="index.html#about">About</a></li>
         <li><a href="engineering.html">Engineering</a></li>
-        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#blog">Blogs</a></li>
       </ul>
     </div>
   </nav>
@@ -26,18 +26,14 @@
     <div class="wrap">
       <a class="back" href="engineering.html#projects">&larr; All projects</a><br>
       <span class="eyebrow">Last year's project</span>
-      <h1><span class="todo">Project Name</span></h1>
-      <p class="lead"><span class="todo">One sentence: what the part is and what it's for.</span></p>
+      <h1>Epoxy Ocean Art</h1>
+      <p class="lead">A 9-inch square plywood panel cut on the router and finished with layered epoxy to look like waves washing up on a beach.</p>
       <div class="meta">
-        <span class="chip">Fusion 360</span>
-        <span class="chip"><span class="todo">Tormach 1100MX</span></span>
-        <span class="chip"><span class="todo">Material (e.g. 6061 aluminum)</span></span>
       </div>
       <ul class="toc">
         <li><a href="#description">Description</a></li>
-        <li><a href="#photos">Photos</a></li>
-        <li><a href="#model">3D Model</a></li>
-        <li><a href="#machining">Machining Process</a></li>
+        <li><a href="#model">Design</a></li>
+        <li><a href="#machining">Build Process</a></li>
         <li><a href="#thoughts">Final Thoughts</a></li>
       </ul>
     </div>
@@ -47,72 +43,75 @@
 
     <!-- DESCRIPTION -->
     <section id="description" class="p-section">
-      <h2><small>01</small>Description</h2>
-      <p><span class="todo">What is this project? What was the goal or design challenge? What constraints did you have (size, material, time, tolerances)? Who or what is it for?</span></p>
-      <p><span class="todo">Describe the key features of the part: pockets, holes, contours, text engraving, etc.</span></p>
+      <h2>Description</h2>
+      <p>For this project, I combined CNC machining with epoxy resin art to create an ocean scene. The base is a 9 &times; 9 &times; 0.5-inch plywood panel with 0.5-inch radius fillets in all four corners. On top, I poured layers of colored epoxy: dark blue on one end, sand on the other, light blue in the middle, and white epoxy along the edge of the sand to create waves.</p>
+      <h3>Materials</h3>
+      <div class="cad">
+        <div>
+          <ul>
+            <li>Plywood</li>
+            <li>Clear epoxy (resin and hardener)</li>
+            <li>Epoxy pigments: white, light blue, and dark blue</li>
+            <li>Mica powder</li>
+            <li>Sand</li>
+          </ul>
+        </div>
+        <figure style="margin:0"><img src="images/projects/epoxy-materials.png" alt="Epoxy pigments, mica powder, and sand" style="border:1px solid var(--rule)"><figcaption style="font-size:.9rem;color:var(--gray);margin-top:6px">Pigments, mica powder, and sand from the shop</figcaption></figure>
+      </div>
     </section>
 
     <!-- PHOTOS -->
     <section id="photos" class="p-section">
-      <h2><small>02</small>Photos</h2>
-      
-      <div class="gallery">
-        <!-- TODO: put photos in images/projects/ and replace each placeholder with:
-             <figure><img src="images/projects/FILENAME.jpg" alt="..."><figcaption>Caption</figcaption></figure> -->
-        <figure><div class="ph">Finished part</div><figcaption>Finished part</figcaption></figure>
-        <figure><div class="ph">Part in the vise / on the machine</div><figcaption>Setup on the machine</figcaption></figure>
-        <figure><div class="ph">Me working at the machine</div><figcaption>Running the job</figcaption></figure>
+      <h2>Photos</h2>
+      <div class="pair">
+        <figure><img src="images/projects/epoxy-pour.jpg" alt="Epoxy art right after pouring all epoxy colors"><figcaption>After pouring all epoxy colors</figcaption></figure>
+        <figure><img src="images/projects/epoxy-final.jpg" alt="Finished epoxy ocean art panel"><figcaption>The finished piece</figcaption></figure>
       </div>
     </section>
 
-    <!-- 3D MODEL -->
+    <!-- DESIGN -->
     <section id="model" class="p-section">
-      <h2><small>03</small>The Fusion 360 model</h2>
+      <h2>The Fusion 360 design</h2>
       <div class="cad">
-        <!-- TODO: screenshot your Fusion 360 model and replace with <img src="images/projects/last-year-fusion.png" alt="Fusion 360 model"> -->
-        <div class="ph wide">Fusion 360 screenshot of the 3D model</div>
+        <figure style="margin:0"><img class="cad-img" style="max-width:344px" src="images/projects/epoxy-drawing.png" alt="Fusion 360 drawing of the panel with dimensions"><figcaption style="font-size:.9rem;color:var(--gray);margin-top:6px">Drawing of the panel: 9&Prime; &times; 9&Prime; &times; 0.5&Prime; with R0.5 corners</figcaption></figure>
         <div>
-          <p><span class="todo">Explain how you modeled it: sketches, extrudes, fillets, chamfers, etc. Mention any design changes you made to make it easier to machine.</span></p>
-          <p><span class="todo">Optional: add a second screenshot of the CAM toolpath simulation.</span></p>
+          <p>I designed the base in Fusion 360 as a 9 &times; 9-inch square, 0.5 inches thick, with 0.5-inch radius fillets in all corners. The rounded corners give the piece a clean, finished look and make it easier for the epoxy to flow smoothly around the edges.</p>
+          <p>I also planned the layout of the colors before pouring: dark blue epoxy on one end, sand on the other, light blue in the middle, and white epoxy on the edge of the sand for the waves.</p>
         </div>
       </div>
     </section>
 
-    <!-- MACHINING -->
+    <!-- MACHINING / BUILD -->
     <section id="machining" class="p-section">
-      <h2><small>04</small>Machining Process</h2>
-      <p><strong>Machine:</strong> <span class="todo">Tormach 1100MX mill or 24R router</span><br><strong>Work holding:</strong> <span class="todo">e.g. vise, soft jaws, fixture plate</span><br><strong>Material:</strong> <span class="todo">material &amp; stock size</span></p>
+      <h2>Build Process</h2>
+      <p><strong>Machine:</strong> Tormach 24R router<br><strong>Material:</strong> 0.5-inch plywood<br><strong>Finish:</strong> Layered epoxy resin with pigments, mica powder, and sand</p>
 
       <h3>Tools I used and why</h3>
       <div class="table-scroll">
         <table class="tools">
-          <thead><tr><th>Tool #</th><th>Bit</th><th>Operation</th><th>Why this bit</th></tr></thead>
+          <thead><tr><th>Tool #</th><th>Bit</th><th>Operation</th><th>What it did</th></tr></thead>
           <tbody>
-            <tr><td>T1</td><td><span class="todo">e.g. 2" face mill</span></td><td>Facing</td><td><span class="todo">Flattens the top of the stock to a clean surface.</span></td></tr>
-            <tr><td>T2</td><td><span class="todo">e.g. 1/2" flat end mill</span></td><td>Roughing / adaptive clearing</td><td><span class="todo">Removes most of the material quickly.</span></td></tr>
-            <tr><td>T3</td><td><span class="todo">e.g. 1/4" flat end mill</span></td><td>Finishing / contour</td><td><span class="todo">Gets into tighter corners for an accurate final shape.</span></td></tr>
-            <tr><td>T4</td><td><span class="todo">e.g. spot drill / drill</span></td><td>Holes</td><td><span class="todo">Spot drill locates the hole so the drill doesn't wander.</span></td></tr>
-            <tr><td>T5</td><td><span class="todo">e.g. chamfer mill</span></td><td>Chamfer / deburr edges</td><td><span class="todo">Breaks sharp edges for a clean, safe finish.</span></td></tr>
+            <tr><td>T4</td><td>Flat end mill (upcut)</td><td>2D Contour</td><td>Cut the plywood panel to shape, including the 0.5-inch radius corners. As an upcut bit, it pulls chips up and out of the cut for clean edges.</td></tr>
+            <tr><td>&mdash;</td><td>Heat gun</td><td>Finishing</td><td>Spread the white epoxy across the board and created bubbles to form the waves.</td></tr>
           </tbody>
         </table>
       </div>
 
       <h3 style="margin-top:36px">Steps</h3>
       <ol class="steps">
-        <li><span class="todo">Designed the part in Fusion 360.</span></li>
-        <li><span class="todo">Set up CAM: stock, origin (WCS), tools, and toolpaths; ran the simulation.</span></li>
-        <li><span class="todo">Posted the G-code and loaded it on the machine.</span></li>
-        <li><span class="todo">Clamped the stock, set the work offset and tool lengths.</span></li>
-        <li><span class="todo">Ran operations; flipped the part for side 2 if needed.</span></li>
-        <li><span class="todo">Deburred and measured with calipers.</span></li>
+        <li>First I cut my plywood on the router using tool 4. Since it was a very simple cut, it did not take long. After cutting, I sawed off the tabs and sanded the edges until smooth.</li>
+        <li> I mixed hardener and resin in a 1:1 ratio and stirred for 5 minutes before adding different colored pigments and sand.</li>
+        <li>I poured the sand mixture down first, waited for about 15 minutes for the sand to dry a bit, and proceeded to pour the dark blue, then light blue, and finally white epoxy.</li>
+        <li>Finally, I used a heat gun to spread the white epoxy into waves and left the piece on the table for 24 hours to fully dry and harden.</li>
       </ol>
     </section>
 
     <!-- FINAL THOUGHTS -->
     <section id="thoughts" class="p-section">
-      <h2><small>05</small>Final Thoughts</h2>
+      <h2>Final Thoughts</h2>
       <div class="callout">
-        <p><span class="todo">What skills did you build? (CAD, CAM, machine setup, measuring, problem solving.) What are you most proud of about the finished part? How will you use what you learned on the next project?</span></p>
+        <p>I'm proud of how realistic the ocean scene turned out. The dark blue fades into the lighter water, and the white epoxy forms waves that look like they're washing up onto real sand.</p>
+        <p>This project taught me how to combine machining with epoxy. I designed a clean, accurate base in Fusion 360, cut it on the router, and then learned how to work with epoxy: measuring resin and hardener in the right 1:1 ratio, mixing in pigments, planning the order of each pour, and using a heat gun to shape the waves.</p>
       </div>
       <div class="pager">
         <a class="btn" href="engineering.html#projects">&larr; All projects</a>
@@ -125,7 +124,7 @@
   <footer>
     <div class="wrap">
       <span>Isaac Lynch, 2026</span>
-      <span><a href="index.html#about">About</a><a href="engineering.html">Engineering</a><a href="index.html#blog">Blog</a></span>
+      <span><a href="index.html#about">About</a><a href="engineering.html">Engineering</a><a href="index.html#blog">Blogs</a></span>
     </div>
   </footer>
 

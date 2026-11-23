@@ -183,3 +183,71 @@ footer a:first-child { margin-left: 0; }
 .cam-shots img { width: 100%; background: var(--white); border: 1px solid var(--rule); }
 .cam-shots figcaption { font-size: .9rem; color: var(--gray); margin-top: 6px; }
 @media (max-width: 760px) { .cam-shots { grid-template-columns: 1fr; } }
+
+/* show every image whole: no cropping */
+.polaroid img,
+.gallery img,
+.project-row .pic img,
+.posts img { aspect-ratio: auto; object-fit: contain; height: auto; }
+.project-row .pic { aspect-ratio: auto; display: block; }
+.project-row .pic:not(:has(img)) { aspect-ratio: 16 / 10; display: grid; place-items: center; }
+.gallery { align-items: start; }
+.posts img { width: 120px; max-height: 120px; }
+
+/* two photos side by side at the same height */
+.pair { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 18px; align-items: flex-start; }
+.pair figure { margin: 0; }
+.pair img { height: 320px; width: auto; max-width: 100%; object-fit: contain; }
+.pair figcaption { font-size: .9rem; color: var(--gray); margin-top: 6px; }
+@media (max-width: 600px) { .pair img { height: auto; width: 100%; } }
+
+.dd-list { margin: 2px 0 0; padding-left: 20px; }
+.dd-list li { margin-bottom: 2px; }
+
+/* second polaroid in About */
+.about-side { display: flex; flex-direction: column; gap: 32px; }
+.polaroid-left { transform: rotate(-2deg); max-width: 420px; }
+.polaroid-left img { aspect-ratio: auto; }
+
+/* hero with a photo on each side of the intro */
+.hero .wrap.hero-3 { grid-template-columns: 1fr 1.2fr 1fr; gap: 40px; }
+.hero-3 .polaroid { max-width: 340px; }
+@media (max-width: 960px) { .hero .wrap.hero-3 { grid-template-columns: 1fr; } }
+
+/* wider hero so the machining photo can be bigger and sit further left */
+.hero .wrap.hero-3 { max-width: 1400px; grid-template-columns: 1.5fr 1.1fr 0.9fr; gap: 48px; }
+.hero-3 .polaroid-left { max-width: 560px; width: 100%; justify-self: start; }
+@media (max-width: 960px) { .hero .wrap.hero-3 { grid-template-columns: 1fr; } .hero-3 .polaroid-left { justify-self: center; } }
+
+/* machining photo: 450px wide, pushed to the left edge of the screen */
+.hero .wrap.hero-3 { max-width: none; padding-left: 24px; padding-right: 40px; grid-template-columns: 450px 1fr 360px; }
+.hero-3 .polaroid-left { width: 450px; max-width: 450px; justify-self: start; }
+@media (max-width: 1100px) {
+  .hero .wrap.hero-3 { grid-template-columns: 1fr; padding: 0 20px; }
+  .hero-3 .polaroid-left { width: 100%; justify-self: center; }
+}
+
+/* FINAL hero layout:
+   intro text + Christmas photo keep their original sizes and spacing (56px gap);
+   machining photo (450px) sits to the left with the same 56px gap */
+.hero .wrap.hero-3 {
+  max-width: none;
+  padding: 0 24px;
+  grid-template-columns: 450px minmax(0, 534px) minmax(0, 410px);
+  gap: 56px;
+  justify-content: center;
+}
+.hero-3 .polaroid-left { width: 450px; max-width: 450px; justify-self: start; }
+.hero-3 .polaroid:not(.polaroid-left) { max-width: 340px; justify-self: center; }
+@media (max-width: 1300px) {
+  .hero .wrap.hero-3 { grid-template-columns: 1fr; max-width: 1040px; padding: 0 20px; }
+  .hero-3 .polaroid-left { width: 100%; justify-self: center; }
+}
+
+/* equal white gap on both sides of the intro text */
+.hero .wrap.hero-3 { grid-template-columns: 450px minmax(0, 534px) 340px; column-gap: 110px; }
+.hero-3 .polaroid:not(.polaroid-left) { justify-self: start; }
+
+/* winter break photo a little larger */
+.hero .wrap.hero-3 { grid-template-columns: 450px minmax(0, 534px) 390px; }
+.hero-3 .polaroid:not(.polaroid-left) { max-width: 390px; width: 100%; }
