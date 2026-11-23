@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Semester 1 Project | Isaac Lynch</title>
+  <title>Wooden Box | Isaac Lynch</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Caveat:wght@500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
@@ -25,19 +25,14 @@
   <header class="p-hero">
     <div class="wrap">
       <a class="back" href="engineering.html#projects">&larr; All projects</a><br>
-      <span class="eyebrow">This semester</span>
-      <h1><span class="todo">Project Name</span></h1>
-      <p class="lead"><span class="todo">One sentence: what the part is and what it's for.</span></p>
-      <div class="callout" style="margin-top:20px"><p style="margin:0">Still working on this one. Full write-up coming for the final draft.</p></div>
+      <span class="eyebrow">This semester &middot; Assignment 2</span>
+      <h1>Wooden Box</h1>
+      <p class="lead">A walnut and maple box with a press-fit walnut lid, designed in Fusion 360 and cut on the Tormach 24R router.</p>
       <div class="meta">
-        <span class="chip">Fusion 360</span>
-        <span class="chip"><span class="todo">Tormach 1100MX</span></span>
-        <span class="chip"><span class="todo">Material (e.g. 6061 aluminum)</span></span>
       </div>
       <ul class="toc">
         <li><a href="#description">Description</a></li>
-        <li><a href="#photos">Photos</a></li>
-        <li><a href="#model">3D Model</a></li>
+        <li><a href="#model">CAD Model</a></li>
         <li><a href="#machining">Machining Process</a></li>
         <li><a href="#thoughts">Final Thoughts</a></li>
       </ul>
@@ -48,76 +43,77 @@
 
     <!-- DESCRIPTION -->
     <section id="description" class="p-section">
-      <h2><small>01</small>Description</h2>
-      <p><span class="todo">What is this project? What was the goal or design challenge? What constraints did you have (size, material, time, tolerances)? Who or what is it for?</span></p>
-      <p><span class="todo">Describe the key features of the part: pockets, holes, contours, text engraving, etc.</span></p>
+      <h2>Description</h2>
+      <p>For Assignment 2 of Engineering Semester 1, I created a box consisting of a combination of walnut and maple, with the lid made from walnut. It measures 5 inches in length, 4 inches wide, 2 inches tall, as well as a 0.25-inch fillet on all inside and outside corners.</p>
+      <h3>Stock</h3>
+      <p>To begin the project, I used the chop saw to cut two &frac34;-inch planks of wood, walnut and maple, to 8 inches long and 5 inches wide for the base of the box. I then used wood glue and clamps to bind the two pieces of wood together without any gaps. I cut another piece of walnut with the same dimensions, this time for the lid.</p>
     </section>
 
     <!-- PHOTOS -->
     <section id="photos" class="p-section">
-      <h2><small>02</small>Photos</h2>
-      
+      <h2>Photos</h2>
       <div class="gallery">
-        <!-- TODO: put photos in images/projects/ and replace each placeholder with:
-             <figure><img src="images/projects/FILENAME.jpg" alt="..."><figcaption>Caption</figcaption></figure> -->
-        <figure><div class="ph">Finished part</div><figcaption>Finished part</figcaption></figure>
-        <figure><div class="ph">Part in the vise / on the machine</div><figcaption>Setup on the machine</figcaption></figure>
-        <figure><div class="ph">Me working at the machine</div><figcaption>Running the job</figcaption></figure>
+        <figure><img class="screen" src="images/projects/box-cam-base.png" alt="Fusion 360 CAM toolpaths for the box base"><figcaption>CAM toolpaths for the base in Fusion 360</figcaption></figure>
+        <figure><img src="images/projects/box-off-router.jpg" alt="Walnut and maple box right after cutting on the router"><figcaption>Fresh off the router</figcaption></figure>
+        <figure><img src="images/projects/semester-1-box.jpg" alt="Finished walnut and maple box with lid"><figcaption>The finished box after tung oil</figcaption></figure>
       </div>
     </section>
 
     <!-- 3D MODEL -->
     <section id="model" class="p-section">
-      <h2><small>03</small>The Fusion 360 model</h2>
+      <h2>The Fusion 360 model</h2>
       <div class="cad">
-        <!-- TODO: screenshot your Fusion 360 model and replace with <img src="images/projects/semester-1-fusion.png" alt="Fusion 360 model"> -->
-        <div class="ph wide">Fusion 360 screenshot of the 3D model</div>
+        <figure style="margin:0"><img class="cad-img" src="images/projects/box-fusion.png" alt="Fusion 360 3D model of the box"><figcaption style="font-size:.9rem;color:var(--gray);margin-top:6px">3D model of the box in Fusion 360</figcaption></figure>
         <div>
-          <p><span class="todo">Explain how you modeled it: sketches, extrudes, fillets, chamfers, etc. Mention any design changes you made to make it easier to machine.</span></p>
-          <p><span class="todo">Optional: add a second screenshot of the CAM toolpath simulation.</span></p>
+          <p>After cutting and gluing my stock, I modeled my box in Fusion 360, starting out with a 2D sketch to create the main body of the box before using the Extrude tool to create a 3D body. After that, I used the Shell feature to hollow out the inside of the box with a wall thickness of 0.25 inches. Finally, I added 0.25-inch fillets to all four corners inside and out, completing the base of the box.</p>
+          <p>I then moved on to the lid of the box, using the same dimensions as the base of the box and offset by 0.01 inches on each side in order to leave enough space for the lid to press fit into the base of the box.</p>
         </div>
       </div>
     </section>
 
     <!-- MACHINING -->
     <section id="machining" class="p-section">
-      <h2><small>04</small>Machining Process</h2>
-      <p><strong>Machine:</strong> <span class="todo">Tormach 1100MX mill or 24R router</span><br><strong>Work holding:</strong> <span class="todo">e.g. vise, soft jaws, fixture plate</span><br><strong>Material:</strong> <span class="todo">material &amp; stock size</span></p>
+      <h2>Machining Process</h2>
+      <p><strong>Machine:</strong> Tormach 24R router<br><strong>Work holding:</strong> Stock screwed to the router bed with wood screws<br><strong>Material:</strong> Glued walnut and maple (base), walnut (lid), cut to 8&Prime; &times; 5&Prime;</p>
+
+      <h3>CAM</h3>
+      <p>After completing the CAD for the box, I used the Manufacturing workspace in Fusion 360 to prepare the CAM operations for the Tormach 24R router. First, I modeled my stock to match the stock I cut from the chop saw and set the origin to the center of the model, so I could probe for the same center point on the machine.</p>
+      <p>For the base, I started with a 2D Adaptive Clearing operation using a long flat end mill (tool 19). Adaptive clearing keeps a constant load on the tool, so it can remove most of the material inside the box quickly without overloading the bit. I followed it with 2D Contour passes with the same tool to finish the walls and cut the outside profile. Then I switched to a bull-nose end mill (tool 63) for a contour pass that formed the 0.25-inch fillets where the inside walls meet the floor.</p>
+      <p>For the lid, I used tool 19 with a 2D Adaptive Clearing operation to remove 0.3 inches of extra stock off the top. To cut out the lid itself, I chose a flat end mill (tool 4) because it is an upcut bit which leaves smooth, clean edges along the bottom of the lid unlike a downcut bit. Finally, I used a 90-degree chamfer bit (tool 8) to cut a chamfer along the inside edge of the lid.</p>
+      <div class="cam-shots">
+        <figure><img src="images/projects/box-cam-base.png" alt="CAM setup for the box base"><figcaption>Base: 2D Adaptive and Contour toolpaths</figcaption></figure>
+        <figure><img src="images/projects/box-cam-lid.png" alt="CAM setup for the lid"><figcaption>Lid: Adaptive, Contour, and Chamfer toolpaths</figcaption></figure>
+      </div>
 
       <h3>Tools I used and why</h3>
       <div class="table-scroll">
         <table class="tools">
-          <thead><tr><th>Tool #</th><th>Bit</th><th>Operation</th><th>Why this bit</th></tr></thead>
+          <thead><tr><th>Tool #</th><th>Bit</th><th>Operation</th><th>What it did</th></tr></thead>
           <tbody>
-            <tr><td>T1</td><td><span class="todo">e.g. 2" face mill</span></td><td>Facing</td><td><span class="todo">Flattens the top of the stock to a clean surface.</span></td></tr>
-            <tr><td>T2</td><td><span class="todo">e.g. 1/2" flat end mill</span></td><td>Roughing / adaptive clearing</td><td><span class="todo">Removes most of the material quickly.</span></td></tr>
-            <tr><td>T3</td><td><span class="todo">e.g. 1/4" flat end mill</span></td><td>Finishing / contour</td><td><span class="todo">Gets into tighter corners for an accurate final shape.</span></td></tr>
-            <tr><td>T4</td><td><span class="todo">e.g. spot drill / drill</span></td><td>Holes</td><td><span class="todo">Spot drill locates the hole so the drill doesn't wander.</span></td></tr>
-            <tr><td>T5</td><td><span class="todo">e.g. chamfer mill</span></td><td>Chamfer / deburr edges</td><td><span class="todo">Breaks sharp edges for a clean, safe finish.</span></td></tr>
+            <tr><td>T19</td><td>Flat end mill (long)</td><td>2D Adaptive Clearing and Contour (base)</td><td>Cut out the entire box. The longer flute length let me cut to the full depth of the box.</td></tr>
+            <tr><td>T63</td><td>Bull-nose end mill</td><td>2D Contour (base)</td><td>Created smooth 0.25-inch fillets at the inside corners of the base.</td></tr>
+            <tr><td>T19</td><td>Flat end mill (long)</td><td>2D Adaptive Clearing (lid)</td><td>Removed lots of material fast. Ex. the 0.3 inches of excess stock off the top of the lid.</td></tr>
+            <tr><td>T4</td><td>Flat end mill</td><td>2D Contour (lid)</td><td>Cut out the lid. As an upcut bit, it pulled chips up and out of the cut, leaving smooth bottom edges.</td></tr>
+            <tr><td>T8</td><td>90&deg; chamfer bit</td><td>2D Chamfer (lid)</td><td>Cut a chamfer along the inside edge of the lid automatically guid the lid into a press fit with the base.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h3 style="margin-top:36px">Steps</h3>
-      <ol class="steps">
-        <li><span class="todo">Designed the part in Fusion 360.</span></li>
-        <li><span class="todo">Set up CAM: stock, origin (WCS), tools, and toolpaths; ran the simulation.</span></li>
-        <li><span class="todo">Posted the G-code and loaded it on the machine.</span></li>
-        <li><span class="todo">Clamped the stock, set the work offset and tool lengths.</span></li>
-        <li><span class="todo">Ran operations; flipped the part for side 2 if needed.</span></li>
-        <li><span class="todo">Deburred and measured with calipers.</span></li>
-      </ol>
+      <h3 style="margin-top:36px">Cutting</h3>
+      <p>After completing the CAM, I post-processed and loaded my G-code into the Tormach 24R router. I secured the stock in the bed with wood screws and probed for the center and the top height of the stock, and then proceeded to cut to produce the finished box.</p>
+
+      <h3>Wood finishing</h3>
+      <p>After cutting my box, I used the orbital sander to sand off the tabs and excess pieces, then hand sanded the sides. By working from coarse to progressively finer grits, I sanded the box to a smooth finish. After sanding both the lid and the box, I applied tung oil to both pieces and wiped the excess off 10 minutes later. Repeating this process several times gave the box a glossy, waterproof finish and deepened the color of the wood.</p>
     </section>
 
     <!-- FINAL THOUGHTS -->
     <section id="thoughts" class="p-section">
-      <h2><small>05</small>Final Thoughts</h2>
+      <h2>Final Thoughts</h2>
       <div class="callout">
-        <p><span class="todo">What skills did you build? (CAD, CAM, machine setup, measuring, problem solving.) What are you most proud of about the finished part? How will you use what you learned on the next project?</span></p>
-      </div>
+        <p>I'm proud of how this box turned out. The tung oil finish gave the wood a rich, dark color, and the contour operations produced even surfaces along the inside of the box. The walnut and maple glue-up came together without any gaps, and the 0.01-inch offset I designed into the lid let it press fit cleanly into the base.</p>
       <div class="pager">
         <a class="btn" href="engineering.html#projects">&larr; All projects</a>
-        <a class="btn" href="project-last-year.html">Back to first project &rarr;</a>
+        <a class="btn" href="semester-1-additional.html">Next: Semester 1 project &rarr;</a>
       </div>
     </section>
 

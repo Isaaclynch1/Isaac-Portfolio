@@ -75,10 +75,10 @@ section { padding: 72px 0; }
   padding: 12px 12px 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,.15);
   transform: rotate(2deg);
-  max-width: 400px;
+  max-width: 340px;
   justify-self: center;
 }
-.polaroid img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+.polaroid img { aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
 .polaroid .note { text-align: center; margin-top: 10px; }
 @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .polaroid { transform: rotate(1deg); } }
 
@@ -174,3 +174,12 @@ footer { border-top: 2px solid var(--ink); padding: 28px 0 40px; font-size: .95r
 footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 footer a { color: var(--ink); margin-left: 16px; }
 footer a:first-child { margin-left: 0; }
+
+/* screenshots: show the whole image instead of cropping */
+.gallery img.screen { object-fit: contain; background: var(--white); border: 1px solid var(--rule); }
+.cad-img { width: 100%; background: var(--white); border: 1px solid var(--rule); padding: 12px; }
+.cam-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0 8px; }
+.cam-shots figure { margin: 0; }
+.cam-shots img { width: 100%; background: var(--white); border: 1px solid var(--rule); }
+.cam-shots figcaption { font-size: .9rem; color: var(--gray); margin-top: 6px; }
+@media (max-width: 760px) { .cam-shots { grid-template-columns: 1fr; } }
